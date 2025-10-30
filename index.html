@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap'); </style>
+    
+    <title>Adrián Domínguez</title>
+
+    <link 
+        rel="icon" 
+        href="images/home/favicon-08.png"
+        media="(prefers-color-scheme: dark)">
+
+        <link 
+        rel="icon" 
+        href="images/home/favicon-08.png"
+        media="(prefers-color-scheme: light)">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 style="visibility: hidden;">DISEÑADOR GRÁFICO</h1>
+
+        <section class="home">
+
+            <img class="logo" src="images/home/logo-05.png"></img>
+
+            <div class="nav">
+            <a href="#trabajo"><h1>TRABAJO</h1></a>
+            <a href="#sobre-mi"><h1>SOBRE MÍ</h1></a>
+            <a href="#contacto"><h1>CONTACTO</h1></a>
+            </div>
+
+        </section>
+
+        <img class="flechita" src="images/home/flecha-05.png">
+
+    </header>
+
+    <main id="trabajo">
+
+        <div class="title-bar"></div>
+
+        <section class="container">
+
+            <div class="pareja">
+
+            <div class="trabajo">
+                <a href="trabajo1.html"><img class="portada" src="images/siluetas flamencas/siluetas_portada.png"></img></a>
+                <div class="texto-trabajo">
+                    <h3>Siluetas flamencas: Yerái Cortés</h3>
+                    <h4>2025</h4>
+                </div>
+            </div> 
+                   
+            <div class="trabajo">
+                <img class="portada" src="images/droli/droli portada 2.png"></img>
+                <div class="texto-trabajo">
+                    <h3>Droli: Unfortunately Gourmet</h3>
+                    <h4>2025</h4>
+                </div>
+            </div> 
+
+            </div>    
+            
+            <div class="pareja">
+
+            <div class="trabajo">
+                <img class="portada" src="images/carnaval errante/carnaval-portada.png"></img>
+                <div class="texto-trabajo">
+                    <h3>Desayuna con Quik</h3>
+                    <h4>2025</h4>
+                </div>
+            </div> 
+                   
+            <div class="trabajo">
+                <img class="portada" src="images/hoff brand/hoff portada.png"></img>
+                <div class="texto-trabajo">
+                    <h3>Hoff City MK II Motion</h3>
+                    <h4>2024</h4>
+                </div>
+            </div> 
+
+            </div>    
+
+            </div>    
+
+           <div class="pareja">
+
+            <div class="trabajo">
+                <img class="portada" src="images/cadiz foco/cadiz portada.png"></img>
+                <div class="texto-trabajo">
+                    <h3>Cádiz bajo el foco</h3>
+                    <h4>2024</h4>
+                </div>
+            </div> 
+                   
+            <div class="trabajo">
+                <img class="portada" src="images/gameboy/gameboy portada.png"></img>
+                <div class="texto-trabajo">
+                    <h3>Retro hits hard</h3>
+                    <h4>2025</h4>
+                </div>
+            </div> 
+
+            </div>   
+
+        </section>
+
+    </main>
+
+        <section class="sobre-mi" id="sobre-mi">
+            
+            <div class="texto-mi"><h3>Soy Adrián Domínguez, diseñador gráfico de Cádiz, actualmente afincado en Jerez de la Frontera. Me apasiona el diseño 3D, el branding y el diseño web, aunque me desenvuelvo con soltura en todas las áreas del diseño: ilustración, diseño editorial, tipografía, diseño de packaging... No me gusta limitarme a una disciplina; disfruto explorando y aprendiendo áreas nuevas de diseño.
+            <br><br>
+            Participo en todas las fases del proceso creativo, disfruto desde el boceto inicial hasta la entrega final. Me gusta comprender a fondo cada proyecto, analizar su esencia y dar forma a una propuesta visual que funcione. No creo en diseñar por diseñar: todo diseño debe comunicar un mensaje claro y significativo.
+            <br><br>
+            Domino la suite de Adobe; para diseño 3D trabajo con Blender, y en diseño web desarrollo tanto en HTML y CSS como en entornos de diseño como Figma.</h3></div>
+            
+        </section>
+
+        <section class="contacto" id="contacto">
+                <h2>¿Algún proyecto en mente?</h2>
+                
+                <div>
+                    <div class="enlaces-contacto">
+                    <a><h4>🡦 @adridomingue.graffico</h4></a>
+                    <a><h4>🡦 adriandominguez.graffico@gmail.com</h4></a>
+                    <a><h4>🡦 Adrián Domínguez</h4></a>
+                </div>
+
+        </section>
+        
+</body>
+
+<script src="https://unpkg.com/kursor"></script>
+
+   <script>
+  // Cursor inicial
+  const k = new kursor({
+    type: 2,
+    color: '#ffffff',
+    removeDefaultCursor: true,
+  });
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elementos = document.querySelectorAll('.trabajo');
+
+      function mostrarAlHacerScroll() {
+        elementos.forEach(el => {
+          const topElemento = el.getBoundingClientRect().top;
+          const alturaPantalla = window.innerHeight;
+
+          if (topElemento < alturaPantalla) {
+            el.classList.add('show');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', mostrarAlHacerScroll);
+      mostrarAlHacerScroll(); // También se ejecuta al cargar
+    });
+  </script>
+
+    <script>
+  // Cuando se recarga la página, fuerza el scroll al tope
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+    </script>
+
+    <script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+    </script>
+
+
+</script>
+
+</html>

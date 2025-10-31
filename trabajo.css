@@ -34,18 +34,16 @@ body{
   display: flex;
   flex-direction: column;
   max-width: 100vw;
-  padding: 50px;
+
   background-color: black;
-  background-size: cover;        
-  background-repeat: no-repeat;  
-  background-position: center;  
-  background-attachment:fixed;
+  
 }
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  padding: 50px;
 }
 
 .logo{
@@ -62,6 +60,13 @@ main{
 .nav{
   display: flex;
   justify-content: center;
+  padding: 50px 0px 150px 0px;
+
+  background-image: url(images/home/home\ work\ 3-06.png);
+  background-size:contain;        
+  background-repeat: no-repeat;  
+  background-position: center;  
+  
 }
 .trabajo{
   display: flex;
@@ -145,8 +150,8 @@ main{
   border-radius: 25px;
 }
 .galeria-2 video {
-  width: auto;
-  height: 90vh;  /* Mantiene proporción real de la imagen */
+  width: 100%;
+  height: 100%;  /* Mantiene proporción real de la imagen */
   object-fit: cover; /* por si alguna es más grande, evita deformación */
   display: block;
   border-radius: 25px;
@@ -174,6 +179,8 @@ main{
   
 }
 .enlaces-contacto{
+  padding-top: 25px;
+  border-top: 2px solid var(--yellow);
   display: flex;
   justify-content: space-between;
 }
@@ -206,7 +213,7 @@ h3{
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 36pt; 
+    font-size: 28pt; 
 }
 
 h4{
@@ -246,6 +253,28 @@ a {
   flex-direction: column;
   width: 100%;
   gap: 25px;
+}
+.nav{
+  background-position: top;  
+
+}
+.galeria-3{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.galeria-2{
+  display: flex;
+  flex-direction: column;
+
+}
+.enlaces-contacto{
+  padding-top: 25px;
+  border-top: 2px solid var(--yellow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 }
 @media screen and (max-width: 600px) {

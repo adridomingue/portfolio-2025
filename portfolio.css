@@ -165,8 +165,8 @@ main{
     grid-template-columns: repeat(2, 1fr);
 
     background-image: url(images/home/home\ yellow.png);
-    background-size: cover;          /* adapta la imagen */
-    background-position: center;     /* centra la imagen */
+    background-size: cover;      
+    background-position: center;     
     padding: 50px;
     gap: 50px;
 }
@@ -175,8 +175,8 @@ main{
   align-self: end;
 }
 .cv{
-  max-width: 80%;
-  height: 75%;
+  max-width: 100%;
+  height: 80%;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -208,7 +208,6 @@ main{
 .mail{
   grid-column: span 2;
 }
-
 
 
 h1{
@@ -260,7 +259,6 @@ h4{
 }
 .contacto h4:hover{
     cursor: pointer;
-    text-decoration: underline;
 }
 h5{
     font-family: "Zalando Sans", sans-serif;

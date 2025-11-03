@@ -259,6 +259,9 @@ h4{
 .contacto h4{
     color: black;
     font-size: 16pt;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 .contacto h4:hover{
     cursor: pointer;
@@ -404,7 +407,7 @@ h2{
   }
   .title-bar{
 
-  margin: 35px 35px;
+  margin: 35px 0px;
   
   }
   h1{

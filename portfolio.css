@@ -240,6 +240,9 @@ h3{
     color: white;
     font-size: 18pt; 
 }
+.trabajo h3{
+  cursor: pointer;
+}
 .sobre-mi h4{
   color: var(--blue);
   text-align: justify;
@@ -383,7 +386,6 @@ h5{
 
 }
 .container{
-  margin: 0px 35px;
   margin-bottom: 75px;
 }
 h2{
